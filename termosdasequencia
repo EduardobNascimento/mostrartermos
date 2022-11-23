@@ -1,0 +1,20 @@
+Faça um programa que mostre os n termos da Série a seguir:
+S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9 + ... + n/m. Dado o valor n dado pelo usuário, informe o valor de S.
+
+n = 100
+seq = []
+seq_impar = []
+for i in range(1,n+1):
+    seq.append(i)
+
+for j in range(1,n*2):
+    if j%2 != 0:
+        seq_impar.append(j)
+
+sum_s = 0
+for k in range(0,n):
+    sum_s += seq[k] / seq_impar[k]
+
+print(seq)
+print(seq_impar)
+sum_s
